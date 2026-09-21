@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robin Pena | Resume</title>
+<meta name="description" content="Resume of Robin Pena, Computer Science and Economics student at Boston University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1c2230;
+    --muted: #555d6b;
+    --rule: #b9bfc9;
+    --link: #1f4e8c;
+    --paper: #ffffff;
+    --desk: #e7e9ed;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--desk); }
+  body {
+    margin: 0;
+    padding: 2rem 1rem 3rem;
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 10.5pt;
+    line-height: 1.38;
+  }
+  a { color: var(--link); text-decoration: none; }
+  a:hover, a:focus-visible { text-decoration: underline; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+
+  .toolbar {
+    max-width: 8.5in;
+    margin: 0 auto 0.75rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .toolbar button {
+    font: inherit;
+    font-size: 10pt;
+    color: var(--ink);
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 0.35rem 0.8rem;
+    cursor: pointer;
+  }
+  .toolbar button:hover { border-color: var(--ink); }
+
+  main {
+    max-width: 8.5in;
+    margin: 0 auto;
+    background: var(--paper);
+    padding: 0.6in 0.65in;
+    box-shadow: 0 1px 3px rgba(28, 34, 48, 0.15);
+  }
+
+  header { text-align: center; margin-bottom: 0.9rem; }
+  h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    margin: 0 0 0.2rem;
+  }
+  .contact { margin: 0; color: var(--muted); }
+  .contact span + span::before { content: "|"; margin: 0 0.5em; color: var(--rule); }
+
+  section { margin-top: 0.85rem; }
+  h2 {
+    font-size: 11.5pt;
+    font-weight: 700;
+    margin: 0 0 0.35rem;
+    padding-bottom: 0.15rem;
+    border-bottom: 1px solid var(--ink);
+  }
+
+  .entry { margin-bottom: 0.55rem; }
+  .entry:last-child { margin-bottom: 0; }
+  .line {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+  }
+  .org { font-weight: 700; }
+  .role { font-style: italic; }
+  .where, .when { white-space: nowrap; }
+  .when { color: var(--muted); }
+  .role-block { margin-top: 0.2rem; }
+
+  ul { margin: 0.15rem 0 0; padding-left: 1.1rem; }
+  li { margin-bottom: 0.1rem; }
+  li::marker { color: var(--muted); }
+
+  .plain { margin: 0.15rem 0 0; }
+  .label { font-weight: 600; }
+  .stack { color: var(--muted); font-style: italic; }
+
+  @media (max-width: 640px) {
+    body { padding: 1rem 0.5rem 2rem; font-size: 10pt; }
+    main { padding: 1.25rem 1rem; }
+    .line { flex-wrap: wrap; gap: 0 1rem; }
+    .contact span { display: inline-block; }
+  }
+
+  @page { size: letter; margin: 0.5in 0.6in; }
+  @media print {
+    html, body { background: #fff; }
+    body { padding: 0; font-size: 10.5pt; }
+    .toolbar { display: none; }
+    main { max-width: none; padding: 0; box-shadow: none; }
+    a { color: var(--ink); }
+    .entry, section { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <button type="button" onclick="window.print()">Download PDF</button>
+</div>
+
+<main>
+  <header>
+    <h1>Robin Pena</h1>
+    <p class="contact">
+      <span>Boston, MA</span>
+      <span><a href="mailto:rpena13@bu.edu">rpena13@bu.edu</a></span>
+      <span><a href="https://github.com/crooki">github.com/crooki</a></span>
+    </p>
+  </header>
+
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="line">
+        <span class="org">Boston University</span>
+        <span class="where">Boston, MA</span>
+      </div>
+      <div class="line">
+        <span class="role">B.S., Computer Science and Economics</span>
+        <span class="when">December 2027</span>
+      </div>
+      <p class="plain"><span class="label">Relevant coursework:</span> Algebraic Algorithms, Concepts of Programming Languages, Computer Systems, Industrial Organization, Market Organization and Public Policy, Intermediate Macroeconomics</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <p class="plain"><span class="label">Languages:</span> C, Java, Python</p>
+    <p class="plain"><span class="label">Tools:</span> Git, Bash, Vim, GCC, GDB, Make</p>
+    <p class="plain"><span class="label">Networking and hardware:</span> TCP/IP, subnetting, UniFi, Cisco switching </p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="entry">
+      <div class="line">
+        <span class="org">Saint Sebastian's School</span>
+        <span class="where">Needham, MA</span>
+      </div>
+
+      <div class="role-block">
+        <div class="line">
+          <span class="role">IT Support Technician (Seasonal)</span>
+          <span class="when">Summers 2023 &ndash; Present</span>
+        </div>
+        <ul>
+          <li>Serve as first-line technical support for faculty and staff, taking hardware, software, and account issues from intake through resolution and escalating only what requires vendor involvement</li>
+          <li>Diagnosed recurring port flapping and access point outages on a UniFi/Cisco network, tracing them to PoE negotiation and link-speed faults on long cable runs</li>
+          <li>Triaged endpoint security alerts in ThreatLocker, separating port scans, errdisable events, and Wake-on-LAN traffic from genuine threats</li>
+          <li>Image, configure, and deploy faculty and classroom machines during summer refresh cycles, including account provisioning and software licensing</li>
+          <li>Wired RS-232 serial control (DB9 to Cat6 to JST) between an Extron control panel, a 4x1 HDMI switcher, and a Newline smartboard for classroom AV</li>
+          <li>Documented fixes and wiring layouts so recurring issues could be resolved by other staff without re-diagnosis</li>
+        </ul>
+      </div>
+
+      <div class="role-block">
+        <div class="line">
+          <span class="role">Campus Safety Officer</span>
+          <span class="when">2020 &ndash; Present</span>
+        </div>
+        <ul>
+          <li>Patrol campus and control building access for students, staff, visitors, and contractors, unlocking and securing facilities on schedule for classes, athletics, and evening events</li>
+          <li>Act as first responder to medical and facility emergencies, coordinating with school administration and local police and fire departments as needed</li>
+          <li>Investigate policy and conduct incidents by reviewing camera footage and speaking with witnesses, then write clear reports for administration</li>
+          <li>Monitor parking and traffic flow during arrival, dismissal, and large campus events</li>
+          <li>Hold a consistent, approachable presence with students and families, defusing situations before they require escalation</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="line">
+        <span class="org">Chipotle Mexican Grill</span>
+        <span class="where">[Cambridge, MA]</span>
+      </div>
+      <div class="line">
+        <span class="role">Service Manager</span>
+        <span class="when">[Feb 2015 &ndash; Dec 2017]</span>
+      </div>
+      <ul>
+        <li>Ran front of house through peak service, reading the line and repositioning crew across register, expo, and digital order assembly to protect speed and order accuracy</li>
+        <li>Raised customer engagement by coaching servers to read guests and recommend pairings &mdash; protein, salsa, sides, drinks &mdash; instead of taking orders passively, lifting add-on attachment and repeat visits</li>
+        <li>Matched crew to customer mix by daypart, putting the strongest communicators on register during lunch rush and student-heavy evenings</li>
+        <li>Handled complaints in person, remaking orders on the spot and following up with regulars to keep them coming back</li>
+        <li>Handled cash reconciliation, inventory counts, and food safety checks, including time and temperature logs and shelf-life tracking</li>
+        <li>Cross-trained front-of-house crew and developed several into shift-lead responsibilities</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="line">
+        <span class="org">McDonald's</span>
+        <span class="where">[Boston, MA]</span>
+      </div>
+      <div class="line">
+        <span class="role">Manager</span>
+        <span class="when">[March 2013 &ndash; Feb 2015]</span>
+      </div>
+      <ul>
+        <li>Supervised crew, set shift assignments, and trained new hires against safety, security, inventory, and profitability standards</li>
+        <li>Increased counter engagement by assigning staff to stations by strength and customer mix &mdash; commuters at breakfast, families and the after-school rush later &mdash; and by coaching suggestive selling on combos and promotions</li>
+        <li>Resolved customer issues at the counter before they escalated, turning service failures into recoveries and retaining regulars</li>
+        <li>Kept the store within operating standards through peak periods, balancing drive-thru and front-counter timing</li>
+        <li>Built shift schedules around crew availability and skill, covering call-outs without slowing service</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="entry">
+      <div class="line">
+        <span><span class="org"><a href="https://github.com/crooki/C-AMA">C-AMA</a></span> <span class="stack">C, GCC, GDB, Make, Vim</span></span>
+        <span class="when">Ongoing</span>
+      </div>
+      <ul>
+        <li>Working through K. N. King's <i>C Programming: A Modern Approach</i>, committing exercises and programming projects to a public repository</li>
+        <li>Develop entirely in a headless Debian ARM64 virtual machine with hand-written Makefiles and GDB debugging, no IDE</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>
